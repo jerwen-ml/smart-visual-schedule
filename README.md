@@ -36,3 +36,16 @@ This is an early educational prototype, not a validated assessment tool. Complet
 
 ## Next steps
 Try a fictional session on the actual laptop, check voice playback and reopening, and review classroom usefulness before choosing standalone hardware. See the repository Issues for the project checklist.
+
+## Activity timers
+Sample defaults (not prescribed time limits): Wash Hands 2 minutes, Puzzle Time 5 minutes, Break Time 3 minutes, Pack Away no timer. In Teacher settings, set each activity's timer minutes; 0 disables it. Save settings to start a new session with those durations.
+
+- Start Timer, Pause/Resume, Reset Timer, +1 minute, and Turn Off Timer are teacher controls.
+- Reset restores the configured duration without starting automatically. Turn Off affects the current activity/session; its saved duration remains available on reset or a new session.
+- At zero, show Time is up and play one gentle chime if enabled, unmuted and audible. Timer expiry never advances or records completion.
+- Chime uses synthesized browser audio; test it on the actual laptop. Keep the app open and the laptop awake: sleep or browser throttling can delay the alert. This is a classroom cue, not a guaranteed alarm.
+- On reopening, a previously running timer restores paused (or ended if its deadline passed), without an unexpected chime.
+- Existing activity settings and completion logs are retained during this update. Timers are not added as completion events to CSV.
+
+## Updating a downloaded copy
+Export your current CSV as a backup. Download and extract the latest ZIP, close the app tab, then replace only index.html inside your existing app folder. Reopen that same path in the same browser to retain access to its browser storage.
